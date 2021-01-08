@@ -11,4 +11,3 @@ do
   | samtools view -b - \
   | samtools sort -o "data/${sample}_sorted.bam" - \
   && samtools index "data/${sample}_sorted.bam"
-  
