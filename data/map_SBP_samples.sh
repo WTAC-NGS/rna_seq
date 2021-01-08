@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-​
+
 for r1 in data/SBP*_1.fastq.gz
 do
   echo $r1
@@ -10,4 +10,5 @@ do
   -1 "data/${sample}_1.fastq.gz" -2 "data/${sample}_2.fastq.gz" \
   | samtools view -b - \
   | samtools sort -o "data/${sample}_sorted.bam" - \
-  && samtools index "data/${sample}_sorted.bam" 
+  && samtools index "data/${sample}_sorted.bam"
+  
