@@ -17,4 +17,3 @@ results_table <- sleuth_results(so, 'conditionSBP', test_type = 'wt')
 write.table(results_table, file="data/kallisto.results", quote=FALSE, sep="\t", row.names=FALSE)
                    
 sleuth_live(so)
-                   
